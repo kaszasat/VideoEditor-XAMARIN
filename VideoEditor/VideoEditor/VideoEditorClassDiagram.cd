@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="VideoEditor.Model.ClientSideFunctions">
+    <Position X="2.5" Y="21.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EBAAAACAAAIwAAAAAgAAAQAAAAgAAAAAQAQEAAAAEEA=</HashCode>
+      <FileName>Model\ClientSideFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.Model.Logger" BaseTypeListCollapsed="true">
+    <Position X="4" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAABAAIAAAAAAAgAAAAAAAQAAAAAAAEAA=</HashCode>
+      <FileName>Model\Logger.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoEditor.Model.WrapperFunctions">
+    <Position X="0.5" Y="21.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>ERCAAACAAAIwAAAAAggACIAAAAgAAAAAQAQAAACIEEA=</HashCode>
+      <FileName>Model\WrapperFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.Converter.DragColorConverter" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>View\Converter\DragColorConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoEditor.View.Converter.SecondsDoubleToString" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>View\Converter\SecondsDoubleToString.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoEditor.View.AppShell">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AppShell.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.EffectPage">
+    <Position X="5.25" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\EffectPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.MontagePage">
+    <Position X="6.75" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MontagePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.MusicPage">
+    <Position X="3.75" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\MusicPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.NoInternetPage">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\NoInternetPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.OperatingSystemNotSupportedPage">
+    <Position X="4" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\OperatingSystemNotSupportedPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.RearrangePage">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RearrangePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.View.TrimPage">
+    <Position X="0.5" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\TrimPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.Helper.EnumerableHelpers">
+    <Position X="4" Y="15.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\Helper\EnumerableHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.Helper.ItemsGroupViewModel">
+    <Position X="2.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\Helper\ItemGroupModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.Helper.ItemViewModel">
+    <Position X="0.5" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAAAQAAAAEAAAAAISAAAAAAAAAAAAAgAAAAACAA=</HashCode>
+      <FileName>ViewModel\Helper\ItemGroupModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.BaseViewModel">
+    <Position X="0.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="VideoEditor.ViewModel.EffectViewModel">
+    <Position X="4.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAJAAAAAQgJAIAAAggAAECAgCAgAEAQAAABAAACAEAw=</HashCode>
+      <FileName>ViewModel\EffectViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.MontageViewModel">
+    <Position X="7.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAIBhCAkQArQGARCgAAAAQAkCFgAEAAKAABAAAGAAAQ=</HashCode>
+      <FileName>ViewModel\MontageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.MusicViewModel">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCJACAGAQAJgJAAAgAAgECCgCAgIEAEAAAAABACAAAw=</HashCode>
+      <FileName>ViewModel\MusicViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.NoInternetViewModel">
+    <Position X="0.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\NoInternetViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.OperatingSystemNotSupportedViewModel">
+    <Position X="2.5" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\OperatingSystemNotSupportedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.RearrangeViewModel">
+    <Position X="2.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAIBhCAlQArAGARCgAAAAQAkCFgAEAACAABAAAGAEAQ=</HashCode>
+      <FileName>ViewModel\RearrangeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VideoEditor.ViewModel.RelayCommand" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAACAAQAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="VideoEditor.ViewModel.TrimViewModel">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIAAAAAQgJggABAgAABEAAgCAgAEAACAABAAADAAAQ=</HashCode>
+      <FileName>ViewModel\TrimViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="VideoEditor.Model.ICloseApplication">
+    <Position X="6" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Model\ICloseApplication.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="VideoEditor.Model.IHelper">
+    <Position X="4.5" Y="21.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>gAABAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\IHelper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VideoEditor.View.EffectPage"
+             xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit"
+             Title="Effect">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Padding="12" Grid.Row="0" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.7*"/>
+            </Grid.RowDefinitions>
+
+
+            <FlexLayout
+                Grid.Row="0" Grid.ColumnSpan="5"
+                Direction="Row"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Start">
+                <Grid >
+                    <Button Text="Pick Video" 
+                        Command="{Binding OpenVideoPickerCommand}"/>
+                </Grid>
+            </FlexLayout>
+
+
+            <FlexLayout Grid.Row="1" Grid.ColumnSpan="5"
+                Direction="Row"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Center">
+                
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0" Text="Selected effect:" VerticalOptions="End" Padding="0,0,0,10"/>
+                    <Picker Grid.Column="1"  x:Name="PickerInstance"  VerticalOptions="End">
+                        <Picker.Items>
+                            <x:String>Black and White</x:String>
+                            <x:String>Grayscale</x:String>
+                            <x:String>Sepia</x:String>
+                            <x:String>Darker</x:String>
+                            <x:String>Lighter</x:String>
+                            <x:String>Increased contrast</x:String>
+                            <x:String>Increased brightness</x:String>
+                            <x:String>Sharpen</x:String>
+                            <x:String>Laplacian edge detector which includes diagonals</x:String>
+                            <x:String>Blur</x:String>
+                            <x:String>Edge enhance</x:String>
+                            <x:String>Edge detect</x:String>
+                            <x:String>Emboss</x:String>
+                            <x:String>Red color cast to shadows</x:String>
+                            <!-- <x:String>Trembling</x:String> -->
+                            <x:String>Slightly increased middle level of blue</x:String>
+                            <x:String>Vintage effect</x:String>
+                            <x:String>Denoise with a sigma of 4.5</x:String>
+                            <x:String>Weak deblock</x:String>
+                            <x:String>Strong deblock</x:String>
+                            <!--<x:String>Delogo</x:String> -->
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+            </FlexLayout>
+
+
+
+            <xct:MediaElement x:Name="mediaElement"
+                                  Source="{Binding FilePath}"
+                                  Grid.Row="2"
+                                  HorizontalOptions="Fill"
+                                  Grid.ColumnSpan="5"
+                                  AutoPlay="False" Aspect="AspectFit"
+                                  ShowsPlaybackControls="True"/>
+
+            
+            
+            <xct:RangeSlider x:Name="EffectRangeSlider" 
+                         Grid.ColumnSpan="5"
+                         Grid.Row="3"/>
+
+            <FlexLayout
+                Grid.Row="4"
+                   Grid.RowSpan="1"
+                   Grid.ColumnSpan="5"
+                Direction="Row"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Start">
+                <Grid  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.0*"/>
+                        <ColumnDefinition Width="0.5*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Add Effect to the Video"
+                        Grid.Column="0"
+                        Command="{Binding AddEffectToVideoCommand}"/>
+                    <Button Text="Cancel"
+                        Grid.Column="1"
+                        Command="{Binding CancelCommand}"/>
+                </Grid>
+            </FlexLayout>
+            
+            
+           
+        </Grid>
+
+        <ProgressBar x:Name="ProgressBar"
+                     Progress="{Binding Progress}"
+                     Grid.ColumnSpan="2"
+                     Grid.Row="1"/>
+
+        <ScrollView
+            Grid.ColumnSpan="2"
+            Grid.Row="2"
+            x:Name="ScrollView"
+            VerticalScrollBarVisibility="Always"
+            HorizontalScrollBarVisibility="Never">
+            <Grid>
+                <!-- Placeholder text so content is scrollable -->
+                <Label 
+                    x:Name="LabelLogText"
+                    Text="Lorem ipsum eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget duis at tellus at urna condimentum mattis pellentesque id nibh tortor id aliquet lectus proin nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas sed tempus urna et pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna eget est lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius duis at consectetur lorem donec massa sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu augue ut lectus arcu bibendum at varius vel pharetra vel turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci porta non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam non nisi est sit amet facilisis magna etiam tempor orci eu lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio"
+                    VerticalOptions="StartAndExpand"
+                    FontSize="Micro"
+                    TextColor="White"/>
+                <Label 
+                    Text="{Binding Logger.LogText}"
+                    VerticalOptions="StartAndExpand"
+                    x:Name="ScrollViewLabel"
+                    FontSize="Micro"
+                    BackgroundColor="Black"
+                    TextColor="White"/>
+            </Grid>
+        </ScrollView>
+    </Grid>
+</ContentPage>
