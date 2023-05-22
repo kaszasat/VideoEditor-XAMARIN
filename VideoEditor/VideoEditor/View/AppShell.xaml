@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="VideoEditor.View.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:VideoEditor"
+    FlyoutHeaderBehavior="CollapseOnScroll"
+    FlyoutBehavior="Disabled">
+
+    <Shell.Resources>
+        <Style x:Key="BaseStyle"
+               TargetType="Element">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#455A64" />
+            <Setter Property="Shell.ForegroundColor"
+                    Value="White" />
+            <Setter Property="Shell.TitleColor"
+                    Value="White" />
+            <Setter Property="Shell.DisabledColor"
+                    Value="#B4FFFFFF" />
+            <Setter Property="Shell.UnselectedColor"
+                    Value="#95FFFFFF" />
+        </Style>
+        <Style TargetType="ShellItem"
+               BasedOn="{StaticResource BaseStyle}" />
+        <Style x:Key="DomesticShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#039BE6" />
+        </Style>
+        <Style x:Key="AboutShell"
+               TargetType="Element"
+               BasedOn="{StaticResource BaseStyle}">
+            <Setter Property="Shell.BackgroundColor"
+                    Value="#96d1ff" />
+        </Style>
+    </Shell.Resources>
+
+
+ 
+
+    <FlyoutItem 
+                FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+                      Title="Trim"
+                      Icon="scissors.png"
+                      ContentTemplate="{DataTemplate local:View.TrimPage}" />
+
+        <ShellContent 
+                      Title="Rearrange"
+                      Icon="puzzle.png"
+                      ContentTemplate="{DataTemplate local:View.RearrangePage}" />
+        <ShellContent 
+                      Title="Music"
+                      Icon="music.png"
+                      ContentTemplate="{DataTemplate local:View.MusicPage}" />
+        <ShellContent 
+                      Title="Effect"
+                      Icon="confetti.png"
+                      ContentTemplate="{DataTemplate local:View.EffectPage}" />
+        <ShellContent 
+                      Title="Montage"
+                      Icon="montage.png"
+                      ContentTemplate="{DataTemplate local:View.MontagePage}" />
+
+    </FlyoutItem>
+
+</Shell>
