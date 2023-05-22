@@ -9,16 +9,18 @@ VideoEditor is a cross-platform video editing application developed using Xamari
  - Xamarin
  - REST API
  - MVVM
- - Android
- - iOS
- - UWP
+ - Android (Java)
+ - iOS (Swift)
+ - UWP (C#)
  - FFmpeg
  - PhotoShop
- - XML
+ - XML (XAML)
  - UML
  - Visio
  - GNU/Linux
  - Ubuntu
+ - Flask (Python)
+ - WSL (Windows Subsystem for Linux)
 
 ## Why?
 
