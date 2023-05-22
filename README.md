@@ -24,7 +24,7 @@ VideoEditor is a cross-platform video editing application developed using Xamari
 
 ## Why?
 
-The aim of this code was to design and implement a cross-platform video editing application using Xamarin for UWP, Android, and iOS platforms. The UWP implementation adheres to the originally set specifications, while modifications were made to the initial specifications for the iOS and Android platforms. These modifications involved outsourcing video processing operations to a development server.
+The aim of this code was to design and implement a cross-platform video editing application using Xamarin for UWP, Android, and iOS platforms. The UWP implementation adheres to the originally set specifications, while modifications were made to the initial specifications for the iOS and Android platforms. These modifications involved outsourcing video processing operations to a development server. The original specifications are partly awailable if you know who I am and where to search for my final thesis.
 
 At the time of the thesis, there were no existing cross-platform video editing applications for UWP, Android, and iOS platforms implemented using Xamarin. Hence, the project's implementation using Xamarin is considered sufficient as a final thesis. Although Xamarin support ended on May 1, 2024, its successor, .NET MAUI, provides a similar functionality and allows developers to migrate their code from Xamarin.Forms to .NET MAUI. The thesis includes a decision process and its results, justifying the use of Xamarin.Forms technologies during development instead of .NET MAUI.
 
