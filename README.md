@@ -46,6 +46,7 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 I would like to express their gratitude to the faculty, advisors, and mentors who provided guidance and support throughout the development of this project. Special thanks to the open-source community and the contributors of the libraries and frameworks used in this project.
+https://github.com/FFmpeg/FFmpeg
 
 ## Project Status
 The VideoEditor project is no longer actively maintained. However, the code and documentation are available for reference and educational purposes.
