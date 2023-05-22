@@ -46,7 +46,16 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 I would like to express their gratitude to the faculty, advisors, and mentors who provided guidance and support throughout the development of this project. Special thanks to the open-source community and the contributors of the libraries and frameworks used in this project.
-https://github.com/FFmpeg/FFmpeg
+ - https://github.com/FFmpeg/FFmpeg
+ - https://github.com/tomaszzmuda/Xabe.FFmpeg
+ - https://nunit.org/
+ - https://github.com/AlDanial/cloc
+ - https://github.com/github/linguist
+ - https://github.com/rochacbruno/flask-powered
+ - https://www.ffmpeg.org/about.html
+ - https://dotnet.microsoft.com/en-us/apps/xamarin
 
 ## Project Status
 The VideoEditor project is no longer actively maintained. However, the code and documentation are available for reference and educational purposes.
+The server runs on localhost. The server was never meant to be operated/accessed outside of a development environment, thus the code reflects that.
+The code meant to demonstrate that a video editing application can be developed using Xamarin for UWP, Android, and iOS platforms not that it should be developed.
