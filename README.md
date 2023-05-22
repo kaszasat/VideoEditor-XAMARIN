@@ -6,4 +6,4 @@ A projekt ikonjai:
 
 A projekt tervezett és megvalósított felülete:
 
-![](images/tervezetta&#32;felületeka&#32;ésa&#32;egya&#32;megvalósította&#32;felületa&#32;2.png)
+![](https://github.com/kaszasat/VideoEditor/blob/a691ed9fefb769f32747824891e62999e7b28b3f/images/tervezett%20fel%C3%BCletek%20%C3%A9s%20egy%20megval%C3%B3s%C3%ADtott%20fel%C3%BClet%203.png)
