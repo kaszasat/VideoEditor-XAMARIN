@@ -34,7 +34,7 @@ The implementation of the project builds upon the knowledge acquired during my u
 
 To use the VideoEditor application, follow the instructions below:
 
-1. Clone the repository: git clone https://github.com/kaszasat/VideoEditor
+1. Clone the repository: <code>git clone https://github.com/kaszasat/VideoEditor</code>
 2. Open the solution file in Visual Studio or your preferred development environment.
 3. Build the solution to restore NuGet packages and compile the code.
 4. Select the desired platform (UWP, Android, or iOS) and deploy the application to the corresponding emulator or device.
