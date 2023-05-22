@@ -20,7 +20,7 @@ VideoEditor is a cross-platform video editing application developed using Xamari
  - GNU/Linux
  - Ubuntu
 
-## The aim.
+## Why?
 
 The aim of this code was to design and implement a cross-platform video editing application using Xamarin for UWP, Android, and iOS platforms. The UWP implementation adheres to the originally set specifications, while modifications were made to the initial specifications for the iOS and Android platforms. These modifications involved outsourcing video processing operations to a development server.
 
