@@ -2,25 +2,16 @@
 
 VideoEditor is a cross-platform video editing application developed using Xamarin for UWP, Android, and iOS platforms. It allows users to perform various video editing operations such as trimming, cropping, adding effects, and more. The project was initially developed as a final thesis for my Bachelor's degree and showcases the implementation of a video editing application using Xamarin.
 
-## Technologies Used
- - C#
- - Python
- - .NET
- - Xamarin
- - REST API
- - MVVM
- - Android (Java)
- - iOS (Swift)
- - UWP (C#)
- - FFmpeg
- - PhotoShop
- - XML (XAML)
- - UML
- - Visio
- - GNU/Linux
- - Ubuntu
- - Flask (Python)
- - WSL (Windows Subsystem for Linux)
+![](videos/output.gif)
+
+## Technologies Used (Or Understanding needed for the project)
+ - C#, Python, Flask, REST API, Back-End Development, Micro Web Frameworks
+ - .NET, Visual Studio, Git, NuGet, NUnit, OOP, Cross-Plaform Development
+ - Xamarin, Xamarin Shell, Xamarin Community Toolkit, MAUI, XML (XAML), Front-End Development
+ - MVVM, Dependency Injection, Dependency Service, Singleton Pattern
+ - Android (Java), ART, ADB, iOS (Swift), AVFoundation, UWP (C#)
+ - UML, Microsoft Visio (Modelling Software), Adobe PhotoShop
+ - GNU/Linux, Ubuntu, WSL (Windows Subsystem for Linux), Networking, Bash, FFmpeg, Xabe.FFmpeg, (Traffic) Routing
 
 ## Why?
 
@@ -44,10 +35,43 @@ To use the VideoEditor application, follow the instructions below:
 4. Select the desired platform (UWP, Android, or iOS) and deploy the application to the corresponding emulator or device.
 5. Once the application is launched, you can explore the various video editing features and functionalities provided by VideoEditor.
 6. (Optional) Configure the client (iOS, Android) and the server for the connection.
-7. (Optional) Run the <code>VideoEditor/VideoEditor.Server/VideoEditor.Server.py/</code> in your GNU/Linux operating system.
+7. (Optional) Run the <code>VideoEditor/VideoEditor.Server/VideoEditor.Server.py</code> in your GNU/Linux operating system.
+
+For the GNU/Linux server make sure that:
+1. Python 3 or above is installed.
+2. FFmpeg is installed.
+
+Once you have successfully installed Python 3 and FFmpeg, you can proceed with the configuration of the application and utilize it's tools as needed.
+
+## Implemented functions
+
+1. Video Trimming: Allows users to trim or cut out specific sections of a video. This feature is helpful for creating shorter clips from a longer video.
+2. Rearrange Video Clips: Enables users to reorder video clips within the sequence. It allows for easy rearrangement of scenes or shots to create a desired sequence or flow.
+3. Add Audio to Video: Lets users import audio files and synchronize them with their videos. This feature enables users to add background music, voiceovers, sound effects, or any other audio elements to enhance the video.
+4. Create Montage from Pictures: Enables users to create a video montage by combining multiple pictures together. This feature resulting in a dynamic slideshow or presentation.
+
+Now, let's go over the implemented video effects:
+- Black and White: Converts the video to grayscale, removing all color information and displaying only shades of black and white.
+- Grayscale: Similar to black and white, it converts the video to grayscale. However, it may retain some color information, resulting in a desaturated look.
+- Sepia: Gives the video a warm, nostalgic tone by applying a brownish tint, reminiscent of old-fashioned photographs.
+- Darken Video: Decreases the overall brightness of the video, making it appear darker.
+- Lighten Video: Increases the overall brightness of the video, making it appear brighter.
+- Increased Contrast: Boosts the difference between the light and dark areas of the video, making the image appear more vibrant and defined.
+- Sharpen
+- Laplace Edge Detection: Enhances the edges and details in the video by applying a sharpening filter based on the Laplace edge detection algorithm. This effect makes the edges more pronounced and the image clearer.
+- Blur: Applies a blur effect to the video, reducing the sharpness and creating a softer, more diffused appearance. This effect can be adjusted to control the degree of blurriness.
+- Edge Enhancement: Emphasizes the edges in the video, making them more defined and prominent. It can give the footage a distinct, stylized look.
+- Emboss: Adds a highlight or shadow to each pixel, creating an embossed or 3D-like effect. This effect simulates the appearance of raised or carved surfaces.
+- Add Red Color to Shadows: Increases the intensity of red tones specifically in the shadow areas of the video, enhancing the warmness and depth of shadows.
+- Blue Color Increase Slightly: Enhances the blue tones in the video, adding a subtle coolness to the overall color balance.
+- Vintage: Applies a vintage or retro look to the video, typically by adding a combination of color grading, vignetting, film grain, and other effects that mimic the aesthetics of older film stocks.
+- Denoising: Reduces or eliminates noise and graininess from the video, resulting in a cleaner and smoother appearance.
+- Weak and Strong Deblock (Sharp Edge Smoothing): These effects smooth out sharp edges in the video, reducing blocky artifacts and enhancing the overall visual quality. The weak deblock effect applies a mild smoothing, while the strong deblock effect provides a more aggressive edge smoothing.
+
+These features and effects provide users with comprehensive video editing capabilities, allowing them to trim and arrange their footage, add audio, create montages, and apply various effects to achieve their desired creative vision.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. (Bear in mind that if you have/want to go commercial you have to make sure you're adhering to the (individual) components' licenses. Make sure to go to the 'Acknowledgments' section and read up on what to do. My code is Free as in Freedom, others, not so.)
 
 ## Acknowledgments
 
@@ -60,6 +84,8 @@ I would like to express their gratitude to the faculty, advisors, and mentors wh
  - https://github.com/rochacbruno/flask-powered
  - https://www.ffmpeg.org/about.html
  - https://dotnet.microsoft.com/en-us/apps/xamarin
+ - https://github.com/Genymobile/scrcpy
+ - https://obsproject.com/
 
 ## Project Status
 The VideoEditor project is no longer actively maintained. However, the code is available for reference and educational purposes.
