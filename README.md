@@ -70,8 +70,6 @@ Now, let's go over the implemented video effects:
 
 These features and effects provide users with comprehensive video editing capabilities, allowing them to trim and arrange their footage, add audio, create montages, and apply various effects to achieve their desired creative vision.
 
-## License
-This project is licensed under the MIT License. (Bear in mind that if you have/want to go commercial you have to make sure you're adhering to the (individual) components' licenses. Make sure to go to the 'Acknowledgments' section and read up on what to do. My code is Free as in Freedom, others, not so.)
 
 ## Acknowledgments
 
